@@ -2,8 +2,8 @@ import mongoose from "mongoose";
 
 const connectToDatabase = async () => {
     try {
-        // await mongoose.connect('mongodb+srv://goku:thecoder@cluster0.hzjo3.mongodb.net/vega?retryWrites=true&w=majority&appName=Cluster0');
-        await mongoose.connect('mongodb://127.0.0.1:27017/v');
+         await mongoose.connect('mongodb+srv://goku:thecoder@cluster0.hzjo3.mongodb.net/vega?retryWrites=true&w=majority&appName=Cluster0');
+        // await mongoose.connect('mongodb://127.0.0.1:27017/v');
 
         mongoose.connection.on('connected', () => {
             console.log('Successfully connected to MongoDB');
